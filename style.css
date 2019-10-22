@@ -22,7 +22,7 @@ a {
 body {
 	margin: 0%;
 	height: 100%;
-	font-size: 20px;
+	font-size: 18px;
 	font-family: 'Varela Round', 'Courier New', Courier, monospace;
 	margin: 0;
 	padding: 0;
@@ -43,7 +43,7 @@ body {
 .landing,
 .faq {
 	width: 100vw;
-	height: 95vh;
+	min-height: 95vh;
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
@@ -67,6 +67,7 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	flex-wrap: wrap;
 }
 .footerlist {
 	display: flex;
@@ -110,4 +111,19 @@ h3 {
 	margin-top: 1rem;
 	font-size: 0.8em;
 	font-family: monospace;
+}
+.copyright a {
+	padding: 3px 5px;
+}
+
+@media only screen and (max-width: 768px) {
+	.faqContainer {
+		margin: 20vh 5vw;
+	}
+	.email {
+		padding: 15px 0px;
+	}
+	.footerlist li {
+		font-size: 1em;
+	}
 }
